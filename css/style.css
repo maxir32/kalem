@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 85.5%;
+    font-style: normal;
+}
+header{
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    height: 100px;
+    background-color: rgba(232, 250, 242, 0.678);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+    /*Comienza index*/
+.logo{
+    display: flex;
+    align-items: center;
+    }
+.logo img{
+    height: 100px;
+    margin: 50px;
+}
+nav{
+    align-items: flex-start
+}
+.navBar{
+    display: flex;
+    list-style: none;    
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.navBar li a{
+    text-decoration: none;
+    color: black;
+}
+.navBar li a:hover{
+     color: rgb(40, 236, 40);
+}
+.banner{
+    min-height: 100vh;
+    background-image: url(../assets/img/kalem.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+.banner::before {
+    content: "";
+    width: 70%;
+    height: 60%;
+    background-color: rgb(194, 245, 238);
+    position: absolute;
+    opacity: 0.6;
+    display:grid
+}
+.banner h2{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 500%;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 8px;
+    position: relative;
+    margin-top: 20px;
+}
+.banner p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    margin-left: 250px;    
+    margin-right: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+footer{
+    display: grid;
+    background-color: rgba(232, 250, 242, 0.678);
+    height: 50%;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+}
+.columna h3{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: small;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 5px;
+}
+.columna p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+    line-height: 30px;
+    text-align: left;
+}
+/*Comienza nosotros*/
+.personal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    padding: 40px;
+    padding-top:10px ;
+}
+.texto{
+    text-align:left;
+    display: block;
+    margin: auto;
+    padding: 30px;
+    font-size: x-large;
+}
+.fot img{
+    border-radius: 5%;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+}
+/*comienza cursos*/
+.fondo-curso{
+    min-height: 100vh;
+    background-image: url(../assets/img/kalem4.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.fondo-curso h2{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    letter-spacing: 8px;
+    position: relative;
+    margin-left: 200px;
+}
+.curs h4{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.curs p{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bolder;
+    font-size: small;
+    color: black;
+    text-align: center;
+    margin: 5px 10px 5px 10px;
+}
+.curs {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px;
+    gap: 3em;
+}
+.tall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(159, 241, 231, 0.589);
+    border-radius: 50px;
+    box-shadow: 0 0 30px 5px rgba(22, 119, 103, 0.781);
+    padding: 10px;
+}
+.tall img {
+    border-radius: 50px;
+    margin: 20px 0 20px 0
+}
+
+.subtitulos {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    margin: 50px;
+}
+h2{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 500%;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 8px;
+    position: relative;
+    margin-top: 20px;
+}
+.sub-subtitulo {
+    font-family: 'Work Sans', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(23, 7, 7);
+}
+.texto{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+    box-shadow: 0 0 50px 5px rgba(22, 119, 103, 0.781);
+    padding: 10px;
+    border-radius: 30px;
+}
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+}
+.inscripcion{
+    background-image: url(../assets/img/reserva.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+.inscripcion label{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: large;
+    font-weight: bolder;    
+    color: rgb(0, 0, 0);
+}
+.inscripcion input{
+    font-family: 'Work Sans', sans-serif;
+    font-size: x-small;
+    font-weight: bolder;
+    color: black;
+}
+.espacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 5px rgba(22, 119, 103, 0.781);
+    padding: 10px;
+}
