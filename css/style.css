@@ -254,6 +254,9 @@ p {
     font-weight: bolder;    
     color: rgb(0, 0, 0);
 }
+input:focus{
+    background-color: rgb(194, 245, 238);
+}
 .inscripcion input{
     font-family: 'Work Sans', sans-serif;
     font-size: x-small;
@@ -366,8 +369,7 @@ p {
         .colum p {
             font-size: small;
         }
-        .banner::before {
-            content: "";
+        .banner::before {            
             width: 80%;
             height: 50%;
             background-color: rgb(194, 245, 238);
@@ -375,14 +377,14 @@ p {
             opacity: 0.6;
         }
         .banner h2 {
-            font-size: 170%;
+            font-size: 190%;
             text-align:center;
         }
         
-        .banner p {
-            font-size: 100%;
-            margin: 15px;
-        }
+        .banner p{
+            font-size: 130%;
+            margin: 15px;            
+        }    
         .personal{
             display: flex;
             flex-direction: column;
