@@ -5,16 +5,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
 html{
     font-size: 100%;
     font-style: normal;
 }
+
 header{
     font-family: 'Karla', sans-serif;
     display: flex;
     height: 100px;
-    background-color: rgba(232, 250, 242, 0.678);
+    background-image: linear-gradient(to left, #aaebe87c, #a0efe07e, #9cf3d381, #a0f5c27c, #adf6ad81);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -26,8 +27,35 @@ header{
     }
 .logo img{
     height: 100px;
-    margin: 50px;
+    margin: 50px; 
+    -webkit-animation: logokalem 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: logokalem 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;       
 }
+ @-webkit-keyframes logokalem {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  @keyframes logokalem {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+  
 nav{
     align-items: flex-start
 }
@@ -91,10 +119,10 @@ nav{
 }
 footer{
     display: grid;
-    background-color: rgba(232, 250, 242, 0.678);
+    background-image: linear-gradient(to left, #aaebe87e, #a0efe075, #9cf3d37a, #a0f5c27e, #adf6ad81);
     height: 50%;
     grid-template-columns: repeat(2,1fr);
-    padding: 20px;
+    padding: 20px;    
 }
 .columna h3{
     font-family: 'Fuzzy Bubbles', cursive;
@@ -103,7 +131,7 @@ footer{
     color: black;
     letter-spacing: 3px;
     text-align: left;
-    margin: 5px;
+    margin: 5px;    
 }
 .columna p{
     font-family: 'Work Sans', sans-serif;
@@ -112,15 +140,16 @@ footer{
     color: black;
     line-height: 30px;
     text-align: left;
-}
+    }
 /*Comienza nosotros*/
-.personal{
+.personal{    
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows:repeat(2,1fr) ;
     padding: 40px;
     padding-top:10px ;
 }
+
 .texto{
     text-align:left;
     display: block;
@@ -207,11 +236,38 @@ h2{
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 500%;
     font-weight: bolder;
-    color: black;
+    color: rgb(0, 0, 0);
     letter-spacing: 8px;
     position: relative;
     margin-top: 20px;
+    -webkit-animation: nosotras 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+       animation: nosotras 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;    
 }
+ @-webkit-keyframes nosotras {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes nosotras {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 .sub-subtitulo {
     font-family: 'Work Sans', sans-serif;
     font-size: large;
