@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-html{
+}
+
+html {
     font-size: 100%;
     font-style: normal;
 }
 
-header{
+header {
     font-family: 'Karla', sans-serif;
     display: flex;
     height: 100px;
@@ -19,60 +20,70 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    }
-    /*Comienza index*/
-.logo{
+}
+
+/*Comienza index*/
+.logo {
     display: flex;
     align-items: center;
-    }
-.logo img{
-    height: 100px;
-    margin: 50px; 
-    -webkit-animation: logokalem 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: logokalem 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;       
 }
- @-webkit-keyframes logokalem {
+
+.logo img {
+    height: 100px;
+    margin: 50px;
+    -webkit-animation: logokalem 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: logokalem 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes logokalem {
     0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      opacity: 1;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
     }
-  }
-  @keyframes logokalem {
+}
+
+@keyframes logokalem {
     0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      opacity: 1;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
     }
-  }
-  
-nav{
+}
+
+nav {
     align-items: flex-start
 }
-.navBar{
+
+.navBar {
     display: flex;
-    list-style: none;    
+    list-style: none;
     gap: 20px;
     font-size: 1.5rem;
 }
-.navBar li a{
+
+.navBar li a {
     text-decoration: none;
     color: black;
 }
-.navBar li a:hover{
-     color: rgb(40, 236, 40);
+
+.navBar li a:hover {
+    color: rgb(40, 236, 40);
 }
-.banner{
+
+.banner {
     min-height: 100vh;
     background-image: url(../assets/img/kalem.jpg);
     background-size: cover;
@@ -87,7 +98,8 @@ nav{
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    }
+}
+
 .banner::before {
     content: "";
     width: 70%;
@@ -95,9 +107,10 @@ nav{
     background-color: rgb(194, 245, 238);
     position: absolute;
     opacity: 0.6;
-    display:grid
+    display: grid
 }
-.banner h2{
+
+.banner h2 {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 500%;
     font-weight: bolder;
@@ -106,65 +119,72 @@ nav{
     position: relative;
     margin-top: 20px;
 }
-.banner p{
+
+.banner p {
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
     color: rgb(0, 0, 0);
     font-size: 150%;
-    margin-left: 250px;    
+    margin-left: 250px;
     margin-right: 250px;
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
 }
-footer{
+
+footer {
     display: grid;
     background-image: linear-gradient(to left, #aaebe87e, #a0efe075, #9cf3d37a, #a0f5c27e, #adf6ad81);
     height: 50%;
-    grid-template-columns: repeat(2,1fr);
-    padding: 20px;    
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
 }
-.columna h3{
+
+.columna h3 {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: small;
     font-weight: bolder;
     color: black;
     letter-spacing: 3px;
     text-align: left;
-    margin: 5px;    
+    margin: 5px;
 }
-.columna p{
+
+.columna p {
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     font-size: medium;
     color: black;
     line-height: 30px;
     text-align: left;
-    }
-/*Comienza nosotros*/
-.personal{    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(2,1fr) ;
-    padding: 40px;
-    padding-top:10px ;
 }
 
-.texto{
-    text-align:left;
+/*Comienza nosotros*/
+.personal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.texto {
+    text-align: left;
     display: block;
     margin: auto;
     padding: 30px;
     font-size: x-large;
 }
-.fot img{
+
+.fot img {
     border-radius: 5%;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     margin-top: 20px;
 }
+
 /*comienza cursos*/
-.fondo-curso{
+.fondo-curso {
     min-height: 100vh;
     background-image: url(../assets/img/kalem4.png);
     background-size: cover;
@@ -180,7 +200,8 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
 }
-.fondo-curso h2{
+
+.fondo-curso h2 {
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: bolder;
     color: rgb(0, 0, 0);
@@ -188,14 +209,16 @@ footer{
     position: relative;
     margin-left: 200px;
 }
-.curs h4{
+
+.curs h4 {
     font-family: 'Work Sans', sans-serif;
     font-size: 100%;
     font-weight: bolder;
     color: rgb(0, 0, 0);
     text-align: center;
 }
-.curs p{
+
+.curs p {
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: bolder;
     font-size: small;
@@ -203,14 +226,16 @@ footer{
     text-align: center;
     margin: 5px 10px 5px 10px;
 }
+
 .curs {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 30px;
     gap: 3em;
 }
-.tall{
+
+.tall {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,6 +245,7 @@ footer{
     box-shadow: 0 0 30px 5px rgba(22, 119, 103, 0.781);
     padding: 10px;
 }
+
 .tall img {
     border-radius: 50px;
     margin: 20px 0 20px 0
@@ -229,52 +255,60 @@ footer{
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: x-large;
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+    color: black;
     margin: 50px;
 }
-h2{
+
+h2 {
     font-family: 'Fuzzy Bubbles', cursive;
-    font-size: 500%;
+    font-size: 400%;
     font-weight: bolder;
-    color: rgb(0, 0, 0);
-    letter-spacing: 8px;
+    color: black;
+    letter-spacing: 6px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 0px;
     -webkit-animation: nosotras 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-       animation: nosotras 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;    
+    animation: nosotras 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
- @-webkit-keyframes nosotras {
+
+@-webkit-keyframes nosotras {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes nosotras {
+}
+
+@keyframes nosotras {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
+
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
+}
+
 .sub-subtitulo {
     font-family: 'Work Sans', sans-serif;
     font-size: large;
     font-weight: bolder;
     color: rgb(23, 7, 7);
 }
-.texto{
+
+.texto {
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     font-size: medium;
@@ -283,13 +317,15 @@ h2{
     padding: 10px;
     border-radius: 30px;
 }
+
 p {
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     font-size: medium;
     color: black;
 }
-.inscripcion{
+
+.inscripcion {
     background-image: url(../assets/img/reserva.png);
     min-height: 100vh;
     background-position: center;
@@ -302,24 +338,28 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
-    margin-right: 20px;    
+    margin-right: 20px;
 }
-.inscripcion label{
+
+.inscripcion label {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: large;
-    font-weight: bolder;    
+    font-weight: bolder;
     color: rgb(0, 0, 0);
 }
-input:focus{
+
+input:focus {
     background-color: rgb(194, 245, 238);
 }
-.inscripcion input{
+
+.inscripcion input {
     font-family: 'Work Sans', sans-serif;
     font-size: x-small;
     font-weight: bolder;
     color: black;
 }
-.espacio{
+
+.espacio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,34 +369,116 @@ input:focus{
     padding: 10px;
 }
 
-@media (max-width:480px){
-    .hola{
+@media (max-width:768px) {
+    .hola {
+        font-size: large;
+    }
+
+    .hola ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+        gap: 0px;
+    }
+
+    .navBar {
+        font-size: 15px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer div img {
+    width: 18px;
+}
+
+.columna {
+    margin: 5px;
+}
+
+.colum h3 {
+    font-size: x-small;
+}
+
+.colum p {
+    font-size: small;
+}
+
+.banner::before {
+    width: 80%;
+    height: 50%;
+    background-color: rgb(194, 245, 238);
+    position: absolute;
+    opacity: 0.6;
+}
+
+.banner h2 {
+    font-size: 190%;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 120%;
+    margin: 50px;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: small;
+}
+.h2 {
+    font-size: 200%;
+}
+.fot img {
+    width: 350px;
+}
+
+@media (max-width:576px) {
+    .hola {
         font-size: x-small;
     }
-    .hola ul{
-        display:flex;
+
+    .hola ul {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 15px;
         gap: 0px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: column;
     }
-    .footer div img{
+
+    .footer div img {
         width: 18px;
     }
-    .columna{
+
+    .columna {
         margin: 15px;
     }
+
     .colum h3 {
         font-size: x-small;
     }
-    
+
     .colum p {
         font-size: small;
     }
+
     .banner::before {
         content: "";
         width: 80%;
@@ -365,94 +487,35 @@ input:focus{
         position: absolute;
         opacity: 0.6;
     }
+
     .banner h2 {
         font-size: 170%;
-        text-align:center;
+        text-align: center;
     }
-    
+
     .banner p {
         font-size: 100%;
         margin: 15px;
     }
-    .personal{
+
+    .personal {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .texto{
-        text-align:center;
+
+    .texto {
+        text-align: center;
         display: block;
-        margin: auto ;
-        font-size:small;
+        margin: auto;
+        font-size: small;
     }
-    .fot img{
+
+    .fot img {
         width: 350px;
     }
-    .navBar{
+
+    .navBar {
         font-size: 15px;
     }
 }
-
-    @media (max-width:768px){
-        .hola{
-            font-size: x-small;
-        }
-        .hola ul{
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 15px;
-            gap: 0px;
-        }
-        .navBar{
-            font-size: 15px;
-        }
-    }
-        .footer{
-            display: flex;
-            flex-direction: column;
-        }
-        .footer div img{
-            width: 18px;
-        }
-        .columna{
-            margin: 15px;
-        }
-        .colum h3 {
-            font-size: x-small;
-        }
-        
-        .colum p {
-            font-size: small;
-        }
-        .banner::before {            
-            width: 80%;
-            height: 50%;
-            background-color: rgb(194, 245, 238);
-            position: absolute;
-            opacity: 0.6;
-        }
-        .banner h2 {
-            font-size: 190%;
-            text-align:center;
-        }
-        
-        .banner p{
-            font-size: 130%;
-            margin: 15px;            
-        }    
-        .personal{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .texto{
-            text-align:center;
-            display: block;
-            margin: auto ;
-            font-size:small;
-        }
-        .fot img{
-            width: 350px;
-        }
-    
