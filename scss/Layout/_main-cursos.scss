@@ -1,0 +1,59 @@
+.fondo-curso {
+    min-height: 100vh;
+    background-image: url(../assets/img/kalem4.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+     h2 {
+        font-family: 'Fuzzy Bubbles', cursive;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        letter-spacing: 8px;
+        position: relative;
+        margin-left: 200px;
+     }
+}
+.curs {
+    @include grid (repeat(3,1fr),repeat(2,1fr));
+    padding: 30px;
+    gap: 3em;
+    
+    h4 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 100%;
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Fuzzy Bubbles', cursive;
+        font-weight: bolder;
+        font-size: small;
+        color: black;
+        text-align: center;
+        margin: 5px 10px 5px 10px;
+    }
+}
+.tall {
+    @include flex (column, center, center);    
+    background-color: rgba(159, 241, 231, 0.589);
+    border-radius: 50px;
+    box-shadow: 0 0 30px 5px rgba(22, 119, 103, 0.781);
+    padding: 10px;
+
+    img {
+        border-radius: 50px;
+        margin: 20px 0 20px 0
+    }
+}

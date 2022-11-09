@@ -1,0 +1,46 @@
+.hola {
+    font-size: large;
+    ul {
+        @include flex (column,center);    
+        margin: 30px;
+        gap: 0px;
+    }
+}
+.navBar {
+    font-size: 15px;
+}
+.personal{
+    @include flex (column,center,none);
+}
+.texto{
+    text-align: center;
+    margin: 30px;
+    font-size: large;
+}
+.fot img{
+    width: 400px;
+}
+
+.curs{
+    @include grid (repeat(2,1fr),repeat(3,1fr));
+    padding: 30px;
+    gap: 3em;
+
+    img{
+        width: 200px;
+    }
+}
+.espacio{
+    h3{
+        text-align: center;
+        padding-top: 10px;
+    }
+    p{
+        margin: 15px;
+        padding: 0%;
+        font-size: smaller;
+    }
+    img{
+        padding: 10px;
+    }
+}

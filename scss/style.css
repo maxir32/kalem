@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-style: normal;
+}
+
+footer {
+  display: grid;
+  background-image: linear-gradient(to left, rgba(170, 235, 232, 0.4941176471), rgba(160, 239, 224, 0.4588235294), rgba(156, 243, 211, 0.4784313725), rgba(160, 245, 194, 0.4941176471), rgba(173, 246, 173, 0.5058823529));
+  height: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.columna h3 {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: small;
+  font-weight: bolder;
+  color: black;
+  letter-spacing: 3px;
+  text-align: left;
+  margin: 5px;
+}
+.columna p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  color: black;
+  line-height: 30px;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */

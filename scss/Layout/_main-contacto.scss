@@ -1,0 +1,15 @@
+.espacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 5px rgba(22, 119, 103, 0.781);
+    padding: 10px;
+    
+    img{
+        display: block;
+        margin: auto;
+        border-radius: 15px;
+    }
+}

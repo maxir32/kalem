@@ -1,0 +1,20 @@
+.personal {
+    @include grid (repeat(2,1fr),repeat(2,1fr));
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.texto {
+    text-align: left;
+    display: block;
+    margin: auto;
+    padding: 30px;
+    font-size: x-large;
+}
+
+.fot img {
+    border-radius: 5%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
