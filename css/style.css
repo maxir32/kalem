@@ -64,6 +64,7 @@ header {
     }
 }
 
+
 nav {
     align-items: flex-start
 }
@@ -72,7 +73,12 @@ nav {
     display: flex;
     list-style: none;
     gap: 20px;
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .navBar li a {
@@ -132,7 +138,29 @@ nav {
     margin-bottom: 30px;
     position: relative;
 }
-
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  #whatsapp i {
+    color: rgb(0, 0, 0);
+  }
+  
+  #whatsapp:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
 footer {
     display: grid;
     background-image: linear-gradient(to left, #aaebe87e, #a0efe075, #9cf3d37a, #a0f5c27e, #adf6ad81);
@@ -369,103 +397,150 @@ input:focus {
     box-shadow: 0 0 50px 5px rgba(22, 119, 103, 0.781);
     padding: 10px;
 }
-
-@media (max-width:768px) {
-    .hola {
-        font-size: large;
-    }
-
-    .hola ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 30px;
-        gap: 0px;
-    }
-
-    .navBar {
-        font-size: 15px;
-    }
-}
-
 .footer {
     display: flex;
     flex-direction: column;
-}
+    }
 
-.footer div img {
+    .footer div img {
     width: 18px;
-}
+    }
 
-.columna {
+    .columna {
     margin: 5px;
-}
+    }
 
-.colum h3 {
+    .colum h3 {
     font-size: x-small;
-}
+    }
 
-.colum p {
+    .colum p {
     font-size: small;
-}
+    }
 
-.banner::before {
+    .banner::before {
     width: 80%;
     height: 50%;
     background-color: rgb(194, 245, 238);
     position: absolute;
     opacity: 0.6;
-}
+    }
 
-.banner h2 {
+    .banner h2 {
     font-size: 190%;
     text-align: center;
-}
+    }
 
-.banner p {
+    .banner p {
     font-size: 120%;
     margin: 50px;
-}
+    }
 
-.personal {
+    .personal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+    }
 
-.texto {
+    .texto {
     text-align: center;
     display: block;
     margin: auto;
     font-size: small;
-}
-.h2 {
+    }
+    .h2 {
     font-size: 200%;
-}
-.fot img {
+    }
+    .fot img {
     width: 350px;
-}
-
-@media (max-width:576px) {
-    .hola {
-        font-size: x-small;
     }
 
+@media screen and (max-width:768px){
+    .hola {
+        font-size: large;
+    }
+    .navBar {
+        font-size: 15px;
+        flex-direction: column;
+    }
     .hola ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 15px;
+        gap: 0px;
+    }
+
+    .hola h2{
+        text-align: center;
+    }
+    .hola p{
+        font-size: 150%;
+        margin: 15px;
+    }
+    .personal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: none;
+    }
+    .texto{
+        text-align: center;
+        margin: 30px;
+        font-size: large;
+    }
+    .fot img{
+        width: 400px;
+    }
+    .fondo-curso{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 30px;
+        gap: 3em;
+    }
+    .fondo-curso img{
+        width: 200px;
+    }
+    .espacio h3{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .espacio p{
+        margin: 15px;
+        padding: 0%;
+        font-size: smaller;
+    }
+    .espacio img{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hola {
+        font-size: x-small;
+    }
+    .navBar {
+        font-size: 15px;
+        }
+    .hola ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 15px;
         gap: 0px;
     }
 
     .footer {
         display: flex;
+        padding: 10px;
         flex-direction: column;
     }
 
     .footer div img {
-        width: 18px;
+        width: 19px;
     }
 
     .columna {
@@ -498,11 +573,15 @@ input:focus {
         font-size: 100%;
         margin: 15px;
     }
+    .subtitulos{
+        font-size: large;
+    }
 
     .personal {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: none;
     }
 
     .texto {
@@ -515,8 +594,35 @@ input:focus {
     .fot img {
         width: 350px;
     }
-
-    .navBar {
-        font-size: 15px;
+    .fondo-curso h2{
+        font-size: large;
+    }
+    .curs{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 3em;
+    }
+    .curs h4{
+        font-size: small;
+    }
+    .curs p{
+        font-size: small; 
+    }
+    .curs img{
+        width: 200px;
+    }
+    .espacio{
+        display: flex;
+        flex-direction: column;
+    }
+    .espacio h3{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .espacio p{
+        margin: 15px;
+        padding: 0%;
+        font-size: smaller;
     }
 }

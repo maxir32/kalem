@@ -1,8 +1,8 @@
-@media (max-width:576px) {
+@media screen and (max-width:480px) {
     .hola {
         font-size: x-small;
         ul {
-            @include flex (column,center);            
+            @include flex (row,center, none);            
             margin: 15px;
             gap: 0px;
         }
@@ -11,6 +11,7 @@
     .footer {
         display: flex;
         flex-direction: column;
+        padding: 10px;
         div img {
             width: 18px;
         }
